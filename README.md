@@ -24,6 +24,7 @@ machine-learning-with-python/
 ├── notebooks/        # Jupyter notebooks with lectures and exercises
 ```
 
+
 ### Presentations
 
 The `presentations/` directory contains a React-based web application that displays course materials in an interactive format. The viewer supports:
