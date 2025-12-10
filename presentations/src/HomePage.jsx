@@ -39,7 +39,8 @@ function HomePage() {
   ];
 
   const handleLectureClick = (lectureId) => {
-    navigate(`/viewer?lecture=${lectureId}`);
+    const basePath = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL.slice(0, -1) : import.meta.env.BASE_URL;
+    navigate(`${basePath}/viewer?lecture=${lectureId}`);
   };
 
   const [lecturesExpanded, setLecturesExpanded] = useState(true);
@@ -48,7 +49,7 @@ function HomePage() {
     <div className="homepage-container">
       <div className="sidebar">
         <div className="sidebar-header">
-          <img src="/turkcell_logo.webp" alt="Turkcell" className="turkcell-logo" />
+          <img src={`${import.meta.env.BASE_URL}turkcell_logo.webp`} alt="Turkcell" className="turkcell-logo" />
           <div className="project-name">Machine Learning with Python</div>
         </div>
         <div className="sidebar-section">
@@ -96,7 +97,7 @@ function HomePage() {
         <div className="readme-content">
           <div className="readme-inner">
             <div className="readme-header">
-              <img src="/turkcell_logo.webp" alt="Turkcell" className="readme-logo" />
+              <img src={`${import.meta.env.BASE_URL}turkcell_logo.webp`} alt="Turkcell" className="readme-logo" />
               <h1>Machine Learning with Python</h1>
             </div>
             

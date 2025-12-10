@@ -10,7 +10,8 @@ function TraceViewer() {
   // Parse URL params
   const urlParams = new URLSearchParams(window.location.search)
   const lectureName = urlParams.get('lecture');  // Lecture name (e.g., lecture_python_intro)
-  const tracePath = lectureName ? `/lectures/${lectureName}.json` : null;  // Construct full path
+  const basePath = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL.slice(0, -1) : import.meta.env.BASE_URL;
+  const tracePath = lectureName ? `${basePath}/lectures/${lectureName}.json` : null;  // Construct full path
   const targetSourcePath = urlParams.get('source');  // Source file to display
   const targetLineNumber = parseInt(urlParams.get('line')) || null;  // Line number to highlight
   const targetStepIndex = parseInt(urlParams.get('step')) || null;  // Step index to highlight
