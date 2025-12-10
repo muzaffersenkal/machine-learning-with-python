@@ -39,8 +39,7 @@ function HomePage() {
   ];
 
   const handleLectureClick = (lectureId) => {
-    const basePath = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL.slice(0, -1) : import.meta.env.BASE_URL;
-    navigate(`${basePath}/viewer?lecture=${lectureId}`);
+    navigate(`/viewer?lecture=${lectureId}`);
   };
 
   const [lecturesExpanded, setLecturesExpanded] = useState(true);
