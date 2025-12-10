@@ -18,7 +18,7 @@ This course provides a complete introduction to machine learning using Python. S
 ## 🗂️ Repository Structure
 
 ```
-python-course/
+machine-learning-with-python/
 ├── presentations/     # Interactive web-based presentation viewer
 ├── data/             # Datasets for exercises and projects
 ├── notebooks/        # Jupyter notebooks with lectures and exercises
