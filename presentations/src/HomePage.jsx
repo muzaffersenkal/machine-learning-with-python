@@ -17,7 +17,7 @@ function HomePage() {
       description: 'Master NumPy and Pandas libraries to perform efficient operations on data with speed and effectiveness',
     },
     {
-      id: 'lecture_4_pandas_part2',
+      id: 'lecture_3_pandas_part2',
       title: 'Pandas Data Analysis',
       description: 'Practice data cleaning, grouping, and transformation operations in Pandas',
     },
