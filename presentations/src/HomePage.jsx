@@ -23,8 +23,8 @@ function HomePage() {
     },
     {
       id: 'lecture_4_visualization',
-      title: 'Data Visualization with Matplotlib & Seaborn',
-      description: 'Transform data into meaningful and impressive visualizations using Matplotlib and Seaborn',
+      title: 'Data Visualization with Matplotlib',
+      description: 'Transform data into meaningful and impressive visualizations using Matplotlib',
     },
     {
       id: 'lecture_5_ml_intro_part1',
